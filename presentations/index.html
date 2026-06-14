@@ -1,884 +1,89 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Claude Code for Software Developers — WAMY NGO Finance Module</title>
+  <title>Claude Code for Software Developers — Agentic Software Engineering</title>
 
   <!-- Reveal.js 5.1 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-dark.min.css">
 
   <!-- Presentation skin -->
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
 
+<!-- ══════════════ LEFT THUMBNAIL PANEL ══════════════ -->
+<nav id="slide-nav">
+  <div id="slide-nav-header">
+    <span class="slide-nav-title">Slides</span>
+    <button id="slide-nav-toggle" title="Collapse">‹</button>
+  </div>
+  <ul id="slide-nav-list"></ul>
+</nav>
+
+<!-- Collapsed re-open tab -->
+<button id="slide-nav-open" title="Open slide panel">›</button>
+
+<!-- ══════════════ MAIN PRESENTATION ══════════════ -->
 <div class="reveal">
   <div class="slides">
 
-<!-- ═══════════════════════════════════════════════
-     SECTION 01 — Intro & What is Claude Code?  (slides 1–8)
-═══════════════════════════════════════════════ -->
-content is spliced in.
-  -->
-  <title>Claude Code — Section 01: Intro (Slides 1–8)</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
-  <link rel="stylesheet" href="../assets/css/custom.css">
-</head>
-<body>
-<div class="reveal">
-<div class="slides">
+    <section data-markdown="slides/01-intro.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
+    <section data-markdown="slides/02-setup.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 1 — Title
-════════════════════════════════════════════════════════ -->
-<section class="title-slide">
+    <section data-markdown="slides/03-planning.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <h1>Claude Code<br>for Software Developers</h1>
-  <p class="subtitle">Introduction to Advanced AI-Assisted Development</p>
+    <section data-markdown="slides/04-architecture.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <div class="tech-pill-row">
-    <span class="tech-pill">WAMY NGO</span>
-    <span class="tech-pill">SaaS ERP</span>
-    <span class="tech-pill">Finance Module</span>
-    <span class="tech-pill">Spring Boot</span>
-    <span class="tech-pill">React 19</span>
-    <span class="tech-pill">MySQL</span>
-    <span class="tech-pill">GitHub Actions</span>
-    <span class="tech-pill">Robi Cloud</span>
-  </div>
+    <section data-markdown="slides/05-backend.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <div class="stat-badge-row">
-    <span class="stat-badge">80 Slides</span>
-    <span class="stat-badge">9 Sections</span>
-    <span class="stat-badge">40+ Real Prompts</span>
-    <span class="stat-badge">100% Hands-on</span>
-  </div>
+    <section data-markdown="slides/06-frontend.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <div class="objectives-box">
-    <h4>🎯 After this session you will be able to:</h4>
-    <ul>
-      <li>Use Claude Code from first install to production deployment</li>
-      <li>Build the WAMY Finance module end-to-end with AI assistance</li>
-      <li>Apply AI to architecture, security, DB optimisation, and testing</li>
-    </ul>
-  </div>
+    <section data-markdown="slides/07-security.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <div class="author-block">
-    <strong>Tahajjat Tuhin</strong>
-    linkedin.com/in/tahajjat
-  </div>
+    <section data-markdown="slides/08-database.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <span class="version-badge">V1.0</span>
-  <div class="slide-num">1 / 80</div>
+    <section data-markdown="slides/09-cicd.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 2 — Session Roadmap
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <h2>Session Roadmap — 80 Slides in 9 Sections</h2>
-  <p class="subtitle">Full SDLC Coverage · WAMY NGO Finance Module throughout</p>
-
-  <div class="roadmap-grid">
-
-    <div class="section-card">
-      <span class="card-num">01</span>
-      <span class="card-range">Slides 3–8</span>
-      <span class="card-title">What is Claude Code?</span>
-      <span class="card-topics">Overview · Chat vs Agent · Install · Auth</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">02</span>
-      <span class="card-range">Slides 9–15</span>
-      <span class="card-title">Setup &amp; First Steps</span>
-      <span class="card-topics">CLI · VS Code /init · CLAUDE.md · Workflow</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">03</span>
-      <span class="card-range">Slides 16–22</span>
-      <span class="card-title">Project Planning</span>
-      <span class="card-topics">BRD · FRS · User Stories · Sprint Plan · Roadmap</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">04</span>
-      <span class="card-range">Slides 23–30</span>
-      <span class="card-title">System Architecture</span>
-      <span class="card-topics">C4 · ERD · Layers · Domain Design · Spring Boot</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">05</span>
-      <span class="card-range">Slides 31–40</span>
-      <span class="card-title">Development — Backend</span>
-      <span class="card-topics">Spring Boot · REST API · Services · JPA · Tests</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">06</span>
-      <span class="card-range">Slides 41–48</span>
-      <span class="card-title">Development — Frontend</span>
-      <span class="card-topics">React 19 · Components · API Hooks · Reports UI</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">07</span>
-      <span class="card-range">Slides 49–56</span>
-      <span class="card-title">Security &amp; Code Review</span>
-      <span class="card-topics">OWASP · IDOR · CSRF · Spring Security · Audit</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">08</span>
-      <span class="card-range">Slides 57–64</span>
-      <span class="card-title">DB Optimisation</span>
-      <span class="card-topics">EXPLAIN · Indexes · Partitions · Caching · Scaling</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">09</span>
-      <span class="card-range">Slides 65–74</span>
-      <span class="card-title">CI/CD &amp; Deployment</span>
-      <span class="card-topics">GitHub Actions · Tests · Build · Robi Cloud Deploy</span>
-    </div>
-
-    <div class="section-card">
-      <span class="card-num">10</span>
-      <span class="card-range">Slides 75–80</span>
-      <span class="card-title">Live Project — WAMY</span>
-      <span class="card-topics">End-to-end demo · Prompts · Action Plan · Next Steps</span>
-    </div>
+    <section data-markdown="slides/10-live-project.md"
+             data-separator="^\n---\n"
+             data-separator-notes="^Notes:"></section>
 
   </div>
+</div>
 
-  <div class="tip-bar">💡 Every section uses the WAMY NGO Finance Module as the live project example.</div>
-  <div class="slide-num">2 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 3 — Section 01 Divider
-════════════════════════════════════════════════════════ -->
-<section class="section-divider">
-
-  <span class="section-badge">SECTION 01</span>
-  <h1>What is Claude Code?</h1>
-  <p class="subtitle">AI-powered agentic coding assistant · not just a chatbot</p>
-
-  <div class="pill-row">
-    <span class="pill">Overview &amp; Capabilities</span>
-    <span class="pill">Chat vs Claude Code</span>
-    <span class="pill">Why Developers Use It</span>
-    <span class="pill">Key Differentiators</span>
+<!-- ══════════════ BOTTOM NAVIGATION BAR ══════════════ -->
+<div id="nav-controls">
+  <button id="btn-prev"  class="nav-btn" title="Previous slide">◀</button>
+  <div id="slide-counter">
+    <span id="slide-current">1</span>
+    <span class="counter-sep">/</span>
+    <span id="slide-total">—</span>
   </div>
-
-  <div class="slide-num">3 / 80</div>
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 4 — What is Claude Code? (Agentic AI, Not a Chatbot)
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <h2>What is Claude Code?</h2>
-  <p class="subtitle">Agentic AI coding assistant that lives in your terminal and IDE</p>
-
-  <div class="card-grid">
-
-    <div class="feature-card">
-      <span class="card-title">🤖 AI Agent, Not a Chatbot</span>
-      <span class="card-body">Reads your entire codebase, edits files, runs commands, executes tests — autonomously</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">💻 Terminal + IDE Native</span>
-      <span class="card-body">Lives in your terminal; VS Code extension gives inline diffs and side-panel chat</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🔁 Full Development Loop</span>
-      <span class="card-body">Plan → Generate → Edit → Test → Commit — Claude handles all phases</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🧠 Context-Aware</span>
-      <span class="card-body">Reads CLAUDE.md to understand your project, team standards, and architecture</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🔗 Tool Integration</span>
-      <span class="card-body">Runs bash, npm, mvn, git — uses real tools in your actual project</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🚀 Agentic Tasks</span>
-      <span class="card-body">Multi-step tasks: "add a new financial report endpoint with tests" — done end to end</span>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 Think of Claude Code as a senior developer who knows your entire codebase and works 24/7.</div>
-  <div class="slide-num">4 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 5 — Claude Chat vs Claude Code
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <h2>Claude Chat vs Claude Code</h2>
-  <p class="subtitle">Understanding the difference — when to use which</p>
-
-  <div class="r-hstack">
-
-    <div class="col-left">
-      <div class="compare-card chat-card">
-        <h3>Claude Chat (claude.ai)</h3>
-        <ul>
-          <li>Web browser interface only</li>
-          <li>Question → Answer model</li>
-          <li>No access to your codebase</li>
-          <li>Cannot edit files or run commands</li>
-          <li>Great for: explaining concepts, writing docs, brainstorming</li>
-          <li>Stateless between conversations</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-right">
-      <div class="compare-card code-card">
-        <h3>Claude Code (CLI + IDE)</h3>
-        <ul>
-          <li>Terminal + VS Code integrated</li>
-          <li>Autonomous agent model</li>
-          <li>Reads your entire project tree</li>
-          <li>Edits files, runs tests, commits code</li>
-          <li>Great for: building features, debugging, refactoring</li>
-          <li>Maintains project context via CLAUDE.md</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 WAMY Project: use Claude Code for all development tasks. Use Claude Chat for quick concept questions when not at your computer.</div>
-  <div class="slide-num">5 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 6 — Claude Code Key Capabilities
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <h2>Claude Code Key Capabilities</h2>
-  <p class="subtitle">What developers use Claude Code for every day</p>
-
-  <div class="cap-grid">
-    <div class="cap-pill">Generate boilerplate &amp; CRUD</div>
-    <div class="cap-pill">Debug errors &amp; exceptions</div>
-    <div class="cap-pill">Write &amp; run unit tests</div>
-    <div class="cap-pill">Refactor legacy code</div>
-    <div class="cap-pill">Generate API endpoints</div>
-    <div class="cap-pill">Security code review</div>
-    <div class="cap-pill" style="grid-column:1/span 3;max-width:33%;margin:0 auto;">Write documentation</div>
-  </div>
-
-  <div class="stat-highlight">
-    <strong>3–10×</strong>
-    Developers using Claude Code ship faster on repetitive tasks
-    <br><span style="font-size:0.8em;color:#93A2B7;">Source: Developer survey 2024</span>
-  </div>
-
-  <div class="slide-num">6 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 7 — Why Claude Code for the WAMY Finance Module
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>Why Claude Code for the WAMY Finance Module</h2>
-  <p class="subtitle">Real benefits for a real Spring Boot + React + MySQL project</p>
-
-  <div class="card-grid">
-
-    <div class="feature-card">
-      <span class="card-title">🏗️ Architecture Design</span>
-      <span class="card-body">Generate full ERD, Spring Boot package structure, REST API contracts from the finance requirement doc</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">📊 10 Financial Reports</span>
-      <span class="card-body">Generate all report queries (P&amp;L, Balance Sheet, Cash Flow…) with JPA repositories and service layers</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🔐 Spring Security</span>
-      <span class="card-body">Generate JWT auth, role-based access, method security annotations (@PreAuthorize) for finance roles</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🧪 Test Suite</span>
-      <span class="card-body">Generate JUnit 5 + Mockito tests for AccountingService, double-entry validation, report generation</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">⚡ DB Optimisation</span>
-      <span class="card-body">Analyse slow report queries, generate MySQL indexes for journal_lines, partitioning strategy</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">🚀 CI/CD Pipeline</span>
-      <span class="card-body">Generate GitHub Actions workflow: test → build → Docker → push → deploy to Robi Cloud</span>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 WAMY estimate: Claude Code reduces dev time from ~12 weeks to ~4 weeks for a team of 2 developers.</div>
-  <div class="slide-num">7 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 8 — Project: WAMY NGO Finance Module
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>Project: WAMY NGO Finance Module</h2>
-  <p class="subtitle">Full requirement overview before we start building</p>
-
-  <div class="r-hstack">
-
-    <div class="col-left">
-      <p style="font-size:0.65em;font-weight:700;color:#0D9488;margin:0 0 0.4rem;">🛠️ Tech Stack</p>
-      <table class="stack-table">
-        <tr><td>Backend</td><td>Spring Boot 3.2 + Java 21</td></tr>
-        <tr><td>Frontend</td><td>React 19 + TypeScript + Vite</td></tr>
-        <tr><td>Database</td><td>MySQL 8.0 — double-entry schema</td></tr>
-        <tr><td>Auth</td><td>Spring Security + JWT (RS256)</td></tr>
-        <tr><td>DevOps</td><td>Git + GitHub Actions CI/CD</td></tr>
-        <tr><td>Hosting</td><td>Robi Cloud (containerised)</td></tr>
-      </table>
-    </div>
-
-    <div class="col-right">
-      <p style="font-size:0.65em;font-weight:700;color:#0D9488;margin:0 0 0.4rem;">📊 Key Financial Reports (10)</p>
-      <ol class="numbered-list">
-        <li>Income Statement (P&amp;L)</li>
-        <li>Balance Sheet</li>
-        <li>Cash Flow Statement</li>
-        <li>A/R Aging Report</li>
-        <li>A/P Aging Report</li>
-        <li>Trial Balance</li>
-        <li>General Ledger</li>
-        <li>Budget vs Actual</li>
-        <li>Bank Reconciliation</li>
-        <li>Comparative Multi-Project Report</li>
-      </ol>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 All 80 slides use this project. By slide 80 you will have a complete implementation plan and 40+ ready-to-use Claude Code prompts.</div>
-  <div class="slide-num">8 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════
-     SECTION 02 — Setup & First Steps            (slides 9–15)
-═══════════════════════════════════════════════ -->
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 9 — Section 02 Divider
-════════════════════════════════════════════════════════ -->
-<section class="section-divider">
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <span class="section-badge">SECTION 02</span>
-  <h1>Setup &amp; First Steps</h1>
-  <p class="subtitle">Install · Authenticate · Configure · Your first prompt</p>
-
-  <!-- Coloured pills — each topic gets its PPTX accent colour -->
-  <div class="pill-row">
-    <span class="pill" style="background:#2462EA;border-color:#2462EA;color:#fff;">Installation (npm)</span>
-    <span class="pill" style="background:#7B39EC;border-color:#7B39EC;color:#fff;">Authentication</span>
-    <span class="pill" style="background:#055E45;border-color:#055E45;color:#fff;">IDE Integration</span>
-    <span class="pill" style="background:#E9570B;border-color:#E9570B;color:#fff;">CLAUDE.md Setup</span>
-  </div>
-
-  <div class="slide-num">9 / 80</div>
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 10 — Claude Code — Installation & Authentication
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>Claude Code — Installation &amp; Authentication</h2>
-  <p class="subtitle">3 steps to your first AI-assisted commit</p>
-
-  <!-- 2 × 2 grid of install panes -->
-  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.65rem;margin-top:0.3rem;">
-
-    <!-- Pane 1 — Prerequisites -->
-    <div style="background:#fff;border-radius:6px;padding:0.55rem 0.7rem;">
-      <p style="font-size:0.6em;font-weight:700;color:#1E2761;margin:0 0 0.4em;">Prerequisites</p>
-      <pre><code class="language-bash">node --version
-java --version
-mvn --version
-# Need Node.js 18+
-# Need Java 21 for WAMY
-# Maven 3.9+</code></pre>
-    </div>
-
-    <!-- Pane 2 — Install -->
-    <div style="background:#fff;border-radius:6px;padding:0.55rem 0.7rem;">
-      <p style="font-size:0.6em;font-weight:700;color:#1E2761;margin:0 0 0.4em;">Install Claude Code</p>
-      <pre><code class="language-bash">npm install -g @anthropic-ai/claude-code
-
-# Verify
-claude --version</code></pre>
-    </div>
-
-    <!-- Pane 3 — Authenticate -->
-    <div style="background:#fff;border-radius:6px;padding:0.55rem 0.7rem;">
-      <p style="font-size:0.6em;font-weight:700;color:#1E2761;margin:0 0 0.4em;">Authenticate</p>
-      <pre><code class="language-bash">claude login
-# Opens browser → Anthropic OAuth
-
-# Or API key directly:
-export ANTHROPIC_API_KEY=sk-ant-...</code></pre>
-    </div>
-
-    <!-- Pane 4 — Launch on WAMY project -->
-    <div style="background:#fff;border-radius:6px;padding:0.55rem 0.7rem;">
-      <p style="font-size:0.6em;font-weight:700;color:#1E2761;margin:0 0 0.4em;">Launch on WAMY project</p>
-      <pre><code class="language-bash">cd wamy-finance
-claude
-# Claude scans project and is ready</code></pre>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 For WAMY: create a <code style="background:rgba(0,0,0,0.15);padding:0.1em 0.3em;border-radius:3px;">wamy-finance/</code> root folder containing both the Spring Boot backend and React frontend before running <code style="background:rgba(0,0,0,0.15);padding:0.1em 0.3em;border-radius:3px;">claude</code>.</div>
-  <div class="slide-num">10 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 11 — CLAUDE.md — Your Project Context File
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>CLAUDE.md — Your Project Context File</h2>
-
-  <div class="r-hstack" style="align-items:stretch;gap:0.8rem;margin-top:0.3rem;">
-
-    <!-- Left — description panel -->
-    <div style="flex:0 0 26%;background:#EAF3FF;border-radius:6px;padding:0.7rem 0.8rem;color:#1E2761;">
-      <p style="font-size:0.62em;font-weight:700;margin:0 0 0.5em;color:#0D9488;">The most important file in your AI-assisted project</p>
-      <p style="font-size:0.56em;line-height:1.55;margin:0 0 0.7em;">
-        📄 CLAUDE.md tells Claude Code about your project — architecture, standards, team conventions, and constraints. Read at every session start.
-      </p>
-      <p style="font-size:0.56em;line-height:1.55;margin:0;color:#0D9488;font-weight:600;">
-        Generate it once:<br>
-        <code style="font-size:0.95em;background:#D0E8FF;padding:0.15em 0.4em;border-radius:3px;color:#1E2761;">claude /init</code>
-      </p>
-    </div>
-
-    <!-- Right — CLAUDE.md code block -->
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:0.52em;font-weight:700;color:#0D9488;margin-bottom:0.3em;">
-        ⚡ WAMY Finance CLAUDE.md — Generated by: <code>claude /init</code>
-      </div>
-      <pre style="margin:0;"><code class="language-markdown"># WAMY NGO — Finance Module
-
-## Project
-SaaS monolithic ERP | Finance module | Laravel → Spring Boot 3.2 + React 19
-
-## Tech Stack
-Backend:  Spring Boot 3.2, Java 21, Maven, Spring Security (JWT RS256)
-Frontend: React 19, TypeScript, Vite, TanStack Query, Recharts
-Database: MySQL 8.0 — double-entry accounting schema
-DevOps:   GitHub Actions CI/CD → RobiCloud (Docker)
-
-## Architecture
-REST API: /api/v1/** with versioning
-Auth:     JWT Bearer tokens
-Roles:    ADMIN | FINANCE_MANAGER | ACCOUNTANT | AUDITOR
-DB:       journal_entries + journal_lines (double-entry)
-          chart_of_accounts, projects
-
-## Standards
-Java:   Google Java Style Guide, Lombok, MapStruct DTOs
-React:  ESLint Airbnb, Prettier, component-per-file
-Tests:  JUnit 5 + Mockito (backend), Vitest + Testing Library (frontend)
-Rule:   Every POST to journal_entries requires debit_total == credit_total</code></pre>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 Run <code style="background:rgba(0,0,0,0.15);padding:0.1em 0.3em;border-radius:3px;">claude /init</code> on your project once — Claude Code scans all files and generates this CLAUDE.md automatically.</div>
-  <div class="slide-num">11 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 12 — IDE Integration — VS Code + Claude Code
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>IDE Integration — VS Code + Claude Code</h2>
-  <p class="subtitle">Inline suggestions · Side panel · File context · Diff review</p>
-
-  <div class="card-grid" style="margin-top:0.3rem;">
-
-    <div class="feature-card">
-      <span class="card-title">✏️ Inline Edit</span>
-      <span class="card-body">Select code → <kbd>Ctrl+K</kbd> → describe change → Claude edits inline with diff preview</span>
-    </div>
-
-    <div class="feature-card" style="background:#FFFAEF;">
-      <span class="card-title">💬 Side Panel</span>
-      <span class="card-body"><kbd>Ctrl+Shift+C</kbd> → full conversation with code context always available alongside your editor</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">📁 File Context</span>
-      <span class="card-body"><code>@filename</code> in chat adds a file to context; <code>/add</code> to bulk-add entire folders</span>
-    </div>
-
-    <div class="feature-card" style="background:#FFFAEF;">
-      <span class="card-title">🔍 Diff Review</span>
-      <span class="card-body">Every change shown as a diff — accept or reject line by line, or accept all at once</span>
-    </div>
-
-    <div class="feature-card">
-      <span class="card-title">⚡ Quick Fix</span>
-      <span class="card-body">Red squiggle → "Fix with Claude" → Claude reads the compiler error and proposes a fix</span>
-    </div>
-
-    <div class="feature-card" style="background:#FFFAEF;">
-      <span class="card-title">🧪 Test Runner</span>
-      <span class="card-body">"Run tests with Claude" → Claude reads failures and proposes fixes automatically until tests pass</span>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 Install both the "Claude Code" VS Code extension AND use the terminal — the terminal is more powerful for multi-file tasks.</div>
-  <div class="slide-num">12 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 13 — Prompt Patterns That Work
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>Prompt Patterns That Work</h2>
-  <p class="subtitle">How to write prompts that get great results every time</p>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.7rem;margin-top:0.3rem;">
-
-    <!-- BAD panel -->
-    <div style="background:#FDF1F1;border-radius:8px;padding:0.7rem 0.9rem;color:#5a0000;">
-      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
-        <span style="background:#EE4343;color:#fff;font-size:0.52em;font-weight:700;padding:0.2em 0.7em;border-radius:2em;">BAD</span>
-        <span style="font-size:0.6em;font-weight:700;color:#EE4343;">Vague — Claude has to guess</span>
-      </div>
-      <div class="prompt-box" style="font-size:0.65em;">
-        Write me a Java class
-      </div>
-      <p style="font-size:0.54em;margin:0.5em 0 0;color:#8a2020;line-height:1.5;">
-        ⚠ Too vague — Claude guesses your stack, your package, your pattern, and your purpose
-      </p>
-    </div>
-
-    <!-- GOOD panel -->
-    <div style="background:#EFFFF3;border-radius:8px;padding:0.7rem 0.9rem;color:#0a2e1a;">
-      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
-        <span style="background:#21C45D;color:#fff;font-size:0.52em;font-weight:700;padding:0.2em 0.7em;border-radius:2em;">GOOD</span>
-        <span style="font-size:0.6em;font-weight:700;color:#21C45D;">Specific — Claude delivers first time</span>
-      </div>
-      <div class="prompt-box" style="font-size:0.58em;">
-        Create a Spring Boot @Service class AccountingService.java in
-        com.wamy.finance.service. Use constructor injection. Method:
-        postJournalEntry(JournalEntryRequest dto) — validates debit == credit,
-        saves to journal_entries via JPA, publishes a JournalEntryPostedEvent.
-        Return JournalEntryResponseDTO.
-      </div>
-      <p style="font-size:0.54em;margin:0.5em 0 0;color:#0a6630;line-height:1.5;">
-        ✓ Specific: package · pattern · method signature · validation · return type
-      </p>
-    </div>
-
-  </div>
-
-  <!-- 5 elements panel -->
-  <div style="background:#1D283A;border-radius:6px;padding:0.55rem 1rem;margin-top:0.5rem;display:flex;align-items:center;gap:2rem;">
-    <span style="font-size:0.6em;font-weight:700;color:#0D9488;white-space:nowrap;">The 5 Elements of a Great Prompt:</span>
-    <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
-      <span class="pill" style="font-size:0.5em;">1. File / Class name</span>
-      <span class="pill" style="font-size:0.5em;">2. Package / folder</span>
-      <span class="pill" style="font-size:0.5em;">3. Framework / pattern</span>
-      <span class="pill" style="font-size:0.5em;">4. Method signature</span>
-      <span class="pill" style="font-size:0.5em;">5. Expected behaviour</span>
-    </div>
-  </div>
-
-  <div class="slide-num">13 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 14 — Claude Code Essential Commands
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>Claude Code Essential Commands</h2>
-  <p class="subtitle">The 10 commands every developer must know</p>
-
-  <!-- 10 commands in a 2-column grid, 5 per column -->
-  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.3rem 1rem;margin-top:0.3rem;">
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/init</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Scan project and generate CLAUDE.md context file. Run once per project.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/run &lt;cmd&gt;</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Run a shell command. Claude sees the output and can react to errors.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/add &lt;file&gt;</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Add file(s) to Claude's context window. Critical for multi-file tasks.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/test</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Run your test suite. Claude reads failures and proposes fixes.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/clear</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Clear conversation history. Start fresh while keeping CLAUDE.md.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/commit</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Stage and commit all Claude changes with an AI-generated commit message.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/undo</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Undo the last file change Claude made. Safe rollback.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/search &lt;term&gt;</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Search codebase for term. Claude uses results as context.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/diff</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">Show all pending changes Claude has made but not yet saved.</span>
-    </div>
-
-    <div style="display:flex;align-items:baseline;gap:0.6rem;padding:0.25rem 0;">
-      <code style="background:#24337F;color:#9FBFFF;font-size:0.6em;padding:0.2em 0.6em;border-radius:3px;white-space:nowrap;font-weight:700;">/help</code>
-      <span style="font-size:0.58em;color:#DCE2EF;line-height:1.4;">List all available commands. Always up to date.</span>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 Keyboard shortcut: <kbd>↑</kbd> in the Claude Code terminal recalls previous prompts — just like bash history.</div>
-  <div class="slide-num">14 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 15 — The Daily Developer Workflow
-════════════════════════════════════════════════════════ -->
-<section>
-
-  <span class="wamy-badge">WAMY NGO</span>
-  <h2>The Daily Developer Workflow</h2>
-  <p class="subtitle">How Claude Code fits into your existing development process</p>
-
-  <!-- Steps 1–4 -->
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;margin-top:0.3rem;">
-
-    <div style="background:#EDF5FF;border-radius:8px;padding:0.55rem 0.7rem;position:relative;">
-      <span style="font-size:1.5em;line-height:1;">🌅</span>
-      <p style="font-size:0.52em;font-weight:800;color:#1E2761;margin:0.2em 0 0.2em;">1 · Start Session</p>
-      <p style="font-size:0.52em;color:#3a4a6b;margin:0;line-height:1.45;">
-        <code style="font-size:0.9em;background:#D0E8FF;padding:0.1em 0.3em;border-radius:2px;">cd wamy-finance &amp;&amp; claude</code><br>
-        Claude reads CLAUDE.md automatically
-      </p>
-    </div>
-
-    <div style="background:#EFFFF3;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">📋</span>
-      <p style="font-size:0.52em;font-weight:800;color:#0A2E1A;margin:0.2em 0 0.2em;">2 · Describe Task</p>
-      <p style="font-size:0.52em;color:#1a4a2a;margin:0;line-height:1.45;">
-        Type in plain English:<br>
-        <em>"Add GET /api/v1/reports/pl endpoint"</em>
-      </p>
-    </div>
-
-    <div style="background:#EDF5FF;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">🤖</span>
-      <p style="font-size:0.52em;font-weight:800;color:#1E2761;margin:0.2em 0 0.2em;">3 · Claude Generates</p>
-      <p style="font-size:0.52em;color:#3a4a6b;margin:0;line-height:1.45;">
-        Reads context, generates:<br>
-        Controller + Service + Repository + Tests
-      </p>
-    </div>
-
-    <div style="background:#EFFFF3;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">🔍</span>
-      <p style="font-size:0.52em;font-weight:800;color:#0A2E1A;margin:0.2em 0 0.2em;">4 · Review Diff</p>
-      <p style="font-size:0.52em;color:#1a4a2a;margin:0;line-height:1.45;">
-        Review every changed file<br>
-        Accept / reject / modify
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Steps 5–7 -->
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-top:0.5rem;">
-
-    <div style="background:#EDF5FF;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">🧪</span>
-      <p style="font-size:0.52em;font-weight:800;color:#1E2761;margin:0.2em 0 0.2em;">5 · Run Tests</p>
-      <p style="font-size:0.52em;color:#3a4a6b;margin:0;line-height:1.45;">
-        <code style="font-size:0.9em;background:#D0E8FF;padding:0.1em 0.3em;border-radius:2px;">/test</code> — Claude reads failures and auto-fixes until tests pass
-      </p>
-    </div>
-
-    <div style="background:#EFFFF3;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">📦</span>
-      <p style="font-size:0.52em;font-weight:800;color:#0A2E1A;margin:0.2em 0 0.2em;">6 · Commit</p>
-      <p style="font-size:0.52em;color:#1a4a2a;margin:0;line-height:1.45;">
-        <code style="font-size:0.9em;background:#D0F0E0;padding:0.1em 0.3em;border-radius:2px;">/commit</code> — AI generates a conventional commit message
-      </p>
-    </div>
-
-    <div style="background:#EDF5FF;border-radius:8px;padding:0.55rem 0.7rem;">
-      <span style="font-size:1.5em;line-height:1;">🚀</span>
-      <p style="font-size:0.52em;font-weight:800;color:#1E2761;margin:0.2em 0 0.2em;">7 · Push &amp; Deploy</p>
-      <p style="font-size:0.52em;color:#3a4a6b;margin:0;line-height:1.45;">
-        <code style="font-size:0.9em;background:#D0E8FF;padding:0.1em 0.3em;border-radius:2px;">git push</code> → GitHub Actions deploys to Robi Cloud automatically
-      </p>
-    </div>
-
-  </div>
-
-  <div class="tip-bar">💡 The key insight: Claude Code fits INTO your existing git workflow — you still review, test, and commit. AI accelerates every step.</div>
-  <div class="slide-num">15 / 80</div>
-
-  <aside class="notes"></aside>
-</section>
-
-
-<!-- Section 03 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 03</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Project Planning with AI</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 16–22 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 04 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 04</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">System Architecture</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 23–30 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 05 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 05</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Backend Development</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 31–40 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 06 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 06</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Frontend — React 19</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 41–48 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 07 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 07</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Security &amp; Code Review</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 49–56 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 08 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 08</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Database Optimisation</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 57–64 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 09 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 09</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">CI/CD &amp; Deployment</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 65–74 &nbsp;·&nbsp; Coming soon</p>
-</section>
-<!-- Section 10 placeholder -->
-<section style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#1E2761;">
-  <p style="font-size:0.55em;background:#1D283A;color:#9FBFFF;padding:0.4em 1em;border-radius:2em;font-weight:700;letter-spacing:0.08em;">SECTION 10</p>
-  <h1 style="color:#DCE2EF;font-size:1.6em;font-weight:800;text-align:center;">Live Project — WAMY Finance</h1>
-  <p style="font-size:0.6em;color:#465468;">Slides 75–80 &nbsp;·&nbsp; Coming soon</p>
-</section>
-  </div><!-- /.slides -->
-</div><!-- /.reveal -->
+  <button id="btn-reset" class="nav-btn nav-btn-reset" title="Go to first slide">↺</button>
+  <button id="btn-next"  class="nav-btn" title="Next slide">▶</button>
+</div>
 
 <!-- Reveal.js 5.1 core + plugins -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
@@ -887,22 +92,183 @@ Rule:   Every POST to journal_entries requires debit_total == credit_total</code
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
 
 <script>
+  /* ──────────────────────────────────────────────────
+     Constants
+  ────────────────────────────────────────────────── */
+  const NAV_W       = 230;
+  const SLIDE_W     = 1280;
+  const SLIDE_H     = 720;
+  const THUMB_W     = 214;                          // frame width (NAV_W - padding*2)
+  const THUMB_SCALE = THUMB_W / SLIDE_W;            // ≈ 0.167
+  const THUMB_H     = Math.round(SLIDE_H * THUMB_SCALE); // ≈ 120px
+
+  let allSlides  = [];
+  let navOpen    = true;
+  let thumbSheet = null; // shared CSSStyleSheet for all shadow DOMs
+
+  /* ──────────────────────────────────────────────────
+     deck-stage technique: load custom.css and strip
+     ".reveal " prefix so rules apply inside shadow DOM
+  ────────────────────────────────────────────────── */
+  async function loadThumbSheet() {
+    try {
+      const raw = await fetch('assets/css/custom.css').then(r => r.text());
+      const css = raw
+        // ".reveal .slides section { … }" → "section { … }"
+        .replace(/\.reveal\s+\.slides\s+section\b/g, 'section')
+        // ".reveal .slides { … }" → left empty (not needed in thumb)
+        .replace(/\.reveal\s+\.slides\b/g, ':host')
+        // ".reveal h1 { … }" → "h1 { … }"
+        .replace(/\.reveal\s+/g, '')
+        // bare ".reveal { … }" → drop the selector (host inherits)
+        .replace(/^\.reveal\s*\{/gm, ':host {');
+      const sheet = new CSSStyleSheet();
+      await sheet.replace(css);
+      return sheet;
+    } catch (e) {
+      console.warn('deck-stage: could not load thumb stylesheet', e);
+      return null;
+    }
+  }
+
+  /* ──────────────────────────────────────────────────
+     Layout helper
+  ────────────────────────────────────────────────── */
+  function setNavWidth(w) {
+    document.documentElement.style.setProperty('--slide-nav-width', w + 'px');
+    if (Reveal.isReady && Reveal.isReady()) Reveal.layout();
+  }
+
+  /* ──────────────────────────────────────────────────
+     Reveal initialisation
+  ────────────────────────────────────────────────── */
   Reveal.initialize({
     hash:            true,
-    slideNumber:     true,
-    width:           1280,
-    height:          720,
+    slideNumber:     false,
+    width:           SLIDE_W,
+    height:          SLIDE_H,
     margin:          0,
-    minScale:        0.4,
+    minScale:        0.2,
     maxScale:        2.0,
     transition:      'slide',
     transitionSpeed: 'fast',
-    controls:        true,
+    controls:        false,
     progress:        true,
     center:          false,
     plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    highlight: { highlightOnLoad: true },
   });
+
+  /* ──────────────────────────────────────────────────
+     After markdown renders: load CSS then build thumbs
+  ────────────────────────────────────────────────── */
+  Reveal.on('ready', async () => {
+    allSlides  = Reveal.getSlides();
+    thumbSheet = await loadThumbSheet();
+    buildThumbnails();
+    syncState();
+  });
+
+  Reveal.on('slidechanged', syncState);
+
+  /* ──────────────────────────────────────────────────
+     buildThumbnails — deck-stage shadow DOM technique
+     Each thumbnail is a Shadow Root that adopts the
+     author stylesheet, so every CSS rule applies exactly
+     as it does in the real slide.
+  ────────────────────────────────────────────────── */
+  function buildThumbnails() {
+    const list = document.getElementById('slide-nav-list');
+
+    allSlides.forEach((slide, i) => {
+      /* ── list item ──────────────────────────────── */
+      const li     = document.createElement('li');
+      li.className = 'slide-thumb-item';
+      const idx    = Reveal.getIndices(slide);
+      li.dataset.h = idx.h;
+      li.dataset.v = idx.v || 0;
+
+      /* ── frame: clips the 1280×720 clone ────────── */
+      const frame     = document.createElement('div');
+      frame.className = 'slide-thumb-frame';
+
+      /* ── shadow DOM host (fills the frame) ───────── */
+      const host = document.createElement('div');
+      host.style.cssText = 'position:absolute;inset:0;overflow:hidden;';
+      const shadow = host.attachShadow({ mode: 'open' });
+
+      // Adopt the modified author stylesheet (deck-stage technique)
+      if (thumbSheet) shadow.adoptedStyleSheets = [thumbSheet];
+
+      /* ── deep-clone the slide section ───────────── */
+      const clone = slide.cloneNode(true);
+      // Remove Reveal.js runtime state classes
+      clone.classList.remove('present', 'past', 'future', 'stack');
+      // Remove nested section stacks Reveal adds
+      clone.querySelectorAll('section').forEach(s => s.remove());
+
+      const bg = slide.getAttribute('data-background-color') || '#1E2761';
+      clone.style.cssText =
+        `position:absolute;top:0;left:0;` +
+        `width:${SLIDE_W}px;height:${SLIDE_H}px;` +
+        `transform:scale(${THUMB_SCALE});transform-origin:top left;` +
+        `overflow:hidden;` +
+        `padding:1.6rem 2.2rem 3.2rem;box-sizing:border-box;` +
+        `background:${bg};color:#DCE2EF;` +
+        `font-family:'Inter','Segoe UI',Arial,sans-serif;font-size:16px;`;
+
+      shadow.appendChild(clone);
+      frame.appendChild(host);
+
+      /* ── slide number badge ─────────────────────── */
+      const badge     = document.createElement('span');
+      badge.className = 'thumb-num-badge';
+      badge.textContent = i + 1;
+
+      li.appendChild(frame);
+      li.appendChild(badge);
+      li.addEventListener('click', () => Reveal.slide(+li.dataset.h, +li.dataset.v));
+      list.appendChild(li);
+    });
+  }
+
+  /* ──────────────────────────────────────────────────
+     Sync active thumbnail highlight + counter
+  ────────────────────────────────────────────────── */
+  function syncState() {
+    const current = Reveal.getCurrentSlide();
+    const { indexh, indexv } = Reveal.getIndices();
+    const h = indexh, v = indexv || 0;
+
+    document.querySelectorAll('.slide-thumb-item').forEach(item => {
+      const active = +item.dataset.h === h && +item.dataset.v === v;
+      item.classList.toggle('active', active);
+      if (active) item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+
+    const flat = allSlides.indexOf(current);
+    document.getElementById('slide-current').textContent = flat + 1;
+    document.getElementById('slide-total').textContent   = allSlides.length;
+  }
+
+  /* ──────────────────────────────────────────────────
+     Bottom controls
+  ────────────────────────────────────────────────── */
+  document.getElementById('btn-prev').addEventListener('click',  () => Reveal.prev());
+  document.getElementById('btn-next').addEventListener('click',  () => Reveal.next());
+  document.getElementById('btn-reset').addEventListener('click', () => Reveal.slide(0, 0));
+
+  /* ──────────────────────────────────────────────────
+     Sidebar toggle
+  ────────────────────────────────────────────────── */
+  function toggleNav(open) {
+    navOpen = open;
+    document.getElementById('slide-nav').classList.toggle('collapsed', !open);
+    document.getElementById('slide-nav-open').classList.toggle('visible', !open);
+    setNavWidth(open ? NAV_W : 0);
+  }
+
+  document.getElementById('slide-nav-toggle').addEventListener('click', () => toggleNav(false));
+  document.getElementById('slide-nav-open').addEventListener('click',   () => toggleNav(true));
 </script>
 
 </body>
